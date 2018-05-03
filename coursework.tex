@@ -1,0 +1,104 @@
+\documentclass[a4paper,14pt,russian]{article}
+\usepackage{./coursework}
+\usepackage{lastpage}
+\newcommand{\caphedre}{ВТ}
+\newcommand{\theme}{Проектирование ЛВС}
+\newcommand{\groupnumber}{5305}
+\newcommand{\studentname}{Билькис П.П.}
+\newcommand{\teachername}{Белова Е.Ю.}
+\newcommand{\discipline}{Сети ЭВМ}
+\newcommand{\myyear}{2018}
+\begin{document}
+
+\input{./coursework-titul.tex}
+
+\section*{Задание на курсовой проект}
+
+Студент \studentname\\
+Группа \groupnumber\\\\
+Тема работы: \theme\\
+Исходные данные:\\
+Содержание пояснительной записки:\\
+Предполагаемый объем пояснительной записки:\\
+Не менее \pageref{LastPage}
+Дата выдачи задания:\\
+Дата сдачи:\\
+Дата защиты:\\
+
+\vfill
+
+
+Студент группы \groupnumber \hfill \studentname
+
+
+Преподаватель \hfill \teachername
+
+
+\clearpage
+
+\selectlanguage{russian}
+\begin{abstract}
+
+\end{abstract}
+
+
+\selectlanguage{english}
+\begin{abstract}
+
+\end{abstract}
+
+\clearpage
+
+\selectlanguage{russian}
+\tableofcontents
+
+\section*{Введение}
+\addcontentsline{toc}{section}{Введение}
+
+\section{Описание организации}
+
+\subsection{Функции организации}
+\input{./sections/sc1-1.tex}
+
+\subsection{Структура организации и функции подразделений}
+\input{./sections/sc1-2.tex}
+
+\section{Разработка транспортной подсистемы локальной вычислительной сети}
+
+\subsection{Описание поэтажных планов зданий организации}
+\input{./sections/sc2-1.tex}
+
+\subsection{Выбор топологии локальной вычислительной сети}
+\input{./sections/sc2-2.tex}
+
+\subsection{Соединение удалённого коммуникационного оборудования}
+\input{./sections/sc2-3.tex}
+
+\subsection{Выбор серверного оборудования}
+\input{./sections/sc2-4.tex}
+
+\subsection{Выбор коммутационного оборудования}
+\input{./sections/sc2-5.tex}
+
+\subsection{Адресация}
+\input{./sections/sc2-6.tex}
+
+\section{Расчёт стоимости и эксплуатации локальной вычислительной сети}
+
+\subsection{Расчёт стоимости оборудования и комплектующих}
+\input{./sections/sc3-1.tex}
+
+\subsection{Расчёт стоимости эксплуатации}
+\input{./sections/sc3-2.tex}
+
+\subsection{Требования к составу обслуживающего персонала}
+\input{./sections/sc3-3.tex}
+
+\section*{Заключение}
+\addcontentsline{toc}{section}{Заключение}
+
+\renewcommand\refname{Список использованных источников}
+\nocite{*}
+\bibliographystyle{./utf8gost705u}
+\bibliography{biblio}
+\end{document}
