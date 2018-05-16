@@ -1,5 +1,8 @@
 *~
 #*#
+*.jpg
+seti/*
+*.pdf
 *.aux
 *.glo
 *.idx

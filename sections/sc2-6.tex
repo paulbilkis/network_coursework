@@ -1,1 +1,181 @@
-% Выбор коммутационного оборудования
+% Выбор оборудования
+\subsubsection{Количество коммутационного оборудования}
+В каждом корпусе располагается монтажный шкаф или стойка, в котором установлено коммутационное оборудование.
+Количество портов коммутатора и маршрутизатора зависит от числа компьютеров, которые необходимо подключить к сети.\\
+Каждый компьютер соединяется с информационной розеткой посредством патч-корда, длиной 3 метра. Кабельная трасса от информационной розетки до патч-панели, расположенной в монтажном шкафу или стойке, проходит в кабель-канале. Соответствующие порты патч-панели и коммутатора соединяются друг с другом при помощи патч-корда, длиной 0,5 метра. Один порт в коммутаторе зарезервирован для соединения коммутатора с маршрутизатором. Маршрутизаторы соединяются между собой с помощью ВОЛС, поэтому предусмотрено наличие SFP-модуля для каждого маршрутизатора. Количество требуемое коммутационное и сопутствующее оборудование сведено в таблицу \ref{table:hw}
+
+\begin{table}[!htbp]
+  \centering
+  \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \hline
+   № здания & № стойки & Название оборудования \newline или комплектующих & Количество & Количество \newline портов \\ \hline
+    \multirow{4}{*}{1} & \multirow{4}{*}{1} & Коммутатор 3-го уровня & 1 & 8 \\ \cline{3-5}
+            & & Коммутатор 2-го уровня & 4 & 24 \\ \cline{3-5}
+            & & Патч-панель & 2 & 48 \\ \cline{3-5}
+            & & ИБП & 1 & - \\ \hline
+    \multirow{5}{*}{2} & \multirow{5}{*}{2} & Коммутатор 3-го уровня & 1 & 8 \\ \cline{3-5}
+            & & Коммутатор 2-го уровня & 3 & 24 \\ \cline{3-5}
+            & & Патч-панель & 1 &  48 \\ \cline{3-5}
+            & & Патч-панель & 1 &  24 \\ \cline{3-5}
+            & & ИБП & 1 & - \\ \hline
+    \multirow{4}{*}{3} & \multirow{4}{*}{3} & Коммутатор 3-го уровня & 1 & 8 \\ \cline{3-5}
+            & & Коммутатор 2-го уровня & 2 & 24 \\ \cline{3-5}
+            & & Патч-панель & 1 & 48 \\ \cline{3-5}
+            & & ИБП & 1 & - \\ \hline
+    \multirow{4}{*}{4} & \multirow{4}{*}{4} & Коммутатор 3-го уровня & 1 & 8 \\ \cline{3-5}
+            & & Коммутатор 2-го уровня & 1 & 24 \\ \cline{3-5}
+            & & Патч-панель & 1 & 24 \\ \cline{3-5}
+            & & ИБП & 1 & - \\ \hline
+    \multirow{4}{*}{5} & \multirow{4}{*}{5} & Коммутатор 3-го уровня & 1 & 8 \\ \cline{3-5}
+            & & Коммутатор 2-го уровня & 1 & 24 \\ \cline{3-5}
+            & & Патч-панель & 1 & 24 \\ \cline{3-5}
+            & & ИБП & 1 & - \\ \hline
+  \end{tabular}
+  \caption{Сводная таблица по количеству требуемого коммутационного оборудования}
+  \label{table:hw}
+\end{table}
+
+\subsubsection{Выбор  оборудования}
+Для выбора оборудования (витая пара, патч-корд, информационных розеток, кабель канал, гофротруба, стойки, монтажные шкафы, коммутаторы, патч-панели, SFP-модули) выберем не менее трех производителей каждого из вида оборудования, и сделаем выбор на одном из них.
+
+\begin{description}
+\item[Витая пара]
+  Кабель категории 5e - тип кабеля для передачи сигналов, состоящий из 4 витых пар. Используется в структурированных кабельных системах для компьютерных сетей, таких как Ethernet. Кабельный стандарт предоставляет производительность до 100 MHz и подходит для 10BASE-T, 100BASE-TX (Fast Ethernet), и 1000BASE-T (Gigabit Ethernet).
+\\UTP – вид неэкранированного кабеля, т.е. кабель без дополнительной защиты от электромагнитных излучений. 
+Так как схожи по характеристикам, выберем наиболее дешевый – кабель марки StabNet.
+  \begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+  
+\item[Оптоволокно]
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+\item[Патч-корд]
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+\item[Информационные розетки]
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+\item[Кабель-канал]
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+\item[Гофротруба]
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+\item[Стойка]
+  \begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+\item[Монтажный шкаф]
+  \begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+\item[Патч-панель]
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+\item[SFP-модуль]
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+\item[Коммутатор]
+  \begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+\item[ИБП]
+  \begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+\item[Сервера]
+  \begin{table}[!htbp]
+    \centering
+    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+      \hline
+      
+    \end{tabular}
+    \caption{Витая пара}
+    \label{table:cabel}
+  \end{table}
+
+  \begin{description}
+    \item[]
+  \end{description}
+  
+\end{description}
