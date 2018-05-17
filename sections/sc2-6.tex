@@ -4,7 +4,7 @@
 Количество портов коммутатора и маршрутизатора зависит от числа компьютеров, которые необходимо подключить к сети.\\
 Каждый компьютер соединяется с информационной розеткой посредством патч-корда, длиной 3 метра. Кабельная трасса от информационной розетки до патч-панели, расположенной в монтажном шкафу или стойке, проходит в кабель-канале. Соответствующие порты патч-панели и коммутатора соединяются друг с другом при помощи патч-корда, длиной 0,5 метра. Один порт в коммутаторе зарезервирован для соединения коммутатора с маршрутизатором. Маршрутизаторы соединяются между собой с помощью ВОЛС, поэтому предусмотрено наличие SFP-модуля для каждого маршрутизатора. Количество требуемое коммутационное и сопутствующее оборудование сведено в таблицу \ref{table:hw}
 
-\begin{table}[!htbp]
+\begin{table}[h]
   \centering
   \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
     \hline
@@ -34,7 +34,7 @@
   \caption{Сводная таблица по количеству требуемого коммутационного оборудования}
   \label{table:hw}
 \end{table}
-
+\clearpage
 \subsubsection{Выбор  оборудования}
 Для выбора оборудования (витая пара, патч-корд, информационных розеток, кабель канал, гофротруба, стойки, монтажные шкафы, коммутаторы, патч-панели, SFP-модули) выберем не менее трех производителей каждого из вида оборудования, и сделаем выбор на одном из них.
 
@@ -43,139 +43,198 @@
   Кабель категории 5e - тип кабеля для передачи сигналов, состоящий из 4 витых пар. Используется в структурированных кабельных системах для компьютерных сетей, таких как Ethernet. Кабельный стандарт предоставляет производительность до 100 MHz и подходит для 10BASE-T, 100BASE-TX (Fast Ethernet), и 1000BASE-T (Gigabit Ethernet).
 \\UTP – вид неэкранированного кабеля, т.е. кабель без дополнительной защиты от электромагнитных излучений. 
 Так как схожи по характеристикам, выберем наиболее дешевый – кабель марки StabNet.
-  \begin{table}[!htbp]
+  \begin{table}[!htp]
     \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|l|l|l|l|l|l|}
       \hline
-      
+      Производитель & Тип кабеля & Категория & Длина & Количество жил & Стоимость \\ \hline
+     StabNet & U/UTP & 5e & 305 & одножильный & 1560 рублей \\ \hline
+      KRAULER & U/UTP & 5e & 305 & одножильный & 5360 рублей \\ \hline
+      NIKOLAN & F/UTP & 5e & 305 & одножильный & 7600 рублей \\ \hline
     \end{tabular}
     \caption{Витая пара}
     \label{table:cabel}
   \end{table}
   
 \item[Оптоволокно]
-\begin{table}[!htbp]
-    \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+  Кабель марки Gembird является мультимодовым, в сравнении с кабелем марки LS-SC, и он дешевле (за 5 м). Следовательно, будем покупать его.
+  \begin{table}[!htbp]
+  \centering
+    \begin{tabular}{|l|l|l|l|l|}%{|p{1cm}|p{1cm}|p{2cm}|p{2cm}|p{2cm}|}
       \hline
-      
+      Производитель & Тип кабеля & Длина & Разъемы & Стоимость \\ \hline
+      Gembird & мультимодовый & 5 м & SC / CS & 451 рублей \\ \hline
+      LS-SC & одномодовый & 1 м & SC / CS & 207 рублей \\ \hline
     \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
+    \caption{Оптоволокно}
+    \label{table:optics}
   \end{table}
+  
 \item[Патч-корд]
-\begin{table}[!htbp]
+  Патч-корды марки Netlan имееют оплётку ПВХ. При горении такой кабель образуют высокотоксичные галогенные соединения, очень опасные для человека. Поэтому купим патч-корд марки Nikomax, хотя он и стоит дороже.
+\begin{table}[!htp]
     \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|l|l|l|l|l|l|l|l|}%{|p{1cm}|p{1cm}|p{2cm}|p{2cm}|p{2cm}|p{1cm}|p{1cm}|p{2cm}|}
       \hline
-      
+      Производитель & Экран & Тип & Категория & Длина & Оплётка & Штук & Стоимость \\ \hline
+      Nikomax & UTP & прямой & 5e & 0.5 м & LSZH & 300 & 19200 рублей \\ \hline
+      Netlan & UTP & прямой & 5e & 0.5 м & ПВХ & 100 & 2 990 рублей \\ \hline
+      Netlan & UTP & прямой & 5e & 0.5 м & ПВХ & 100 &3 790 рублей \\ \hline
     \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
+    \caption{Патчкорд}
+    \label{table:patchcord}
   \end{table}
+  
 \item[Информационные розетки]
-\begin{table}[!htbp]
+  Так как мы используем и двухпортовые и однопортовые розетки, то выберем наиболее дешевые – марки Nikomax.
+\begin{table}[!htp]
     \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|l|l|l|l|}%{|p{1cm}|p{1cm}|p{2cm}|p{2cm}|}
       \hline
-      
+      Производитель & Количество портов & Тип портов & Стоимость \\ \hline
+      Nikomax & 2 & 8P8C & 280 рублей \\ \hline
+      Netlan & 2 & 8P8C & 990 рублей \\ \hline
+      Nikomax & 1 & 8P8C & 190 рублей \\ \hline
     \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
+    \caption{Информационные розетки}
+    \label{table:infosocket}
   \end{table}
 \item[Кабель-канал]
-\begin{table}[!htbp]
+  Лучше выбрать кабель канал, которой имеет большую ширину. Выберем Ecoline.
+\begin{table}[!htp]
     \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|l|l|l|l|l|}%{|p{1cm}|p{1cm}|p{2cm}|p{2cm}|p{2cm}|}
       \hline
-      
+      Производитель & Ширина & Высота & Длина & Стоимость \\ \hline
+      Элекор & 20 мм & 10 мм & 2 м & 34 рублей \\ \hline
+      Элекор & 100 мм & 60 мм & 2 м & 380 рублей \\ \hline
+      Ecoline & 100 мм & 60 мм & 2 м & 261 рублей \\ \hline
     \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
+    \caption{Кабель-канал}
+    \label{table:cabelcanal}
   \end{table}
 \item[Гофротруба]
-\begin{table}[!htbp]
+  Лучше выбрать гофротрубу с наибольшим диаметром, чтобы при добавлении новых кабелей, диаметра хватило для прохода кабеля. Выберем марку – Промрукав.
+\begin{table}[!htp]
     \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|l|l|l|l|l|}%{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
       \hline
-      
+      Производитель & Диаметр & MAX t & MIN t & Стоимость \\ \hline
+      Stout & 25 мм & 90 C & 40 C & 14 рублей \\ \hline
+      THERMOTECH & 16 мм & 90 C & 40 C & 30 рублей \\ \hline
+      Промрукав & 25 мм & 90 C & 40 C & 14 рублей \\ \hline
     \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
+    \caption{Гофротруба}
+    \label{table:corrugatedtrube}
   \end{table}
 \item[Стойка]
+  Так как стойки имеют одинаковые параметры, выебер стойку марки Heperline, так как она более дешевая.
   \begin{table}[!htbp]
     \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|l|l|l|l|l|l|}%{|p{1cm}|p{1cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
       \hline
-      
+      Производитель & Вид поставки & Вид монтажа & Конструктив & Стандарт упаковки & Стоимость \\ \hline
+      TLK & разборный & напольный & 19 & 42U & 16 210 рублей \\ \hline
+      Heperline & разборный & напольный & 19 & 42U & 6 990 рублей \\ \hline
     \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
+    \caption{Стойка}
+    \label{table:rack}
   \end{table}
 \item[Монтажный шкаф]
-  \begin{table}[!htbp]
+  Мы будем использовать монтажные шкафы настенные и напольные. Настенные будут использоваться на каждом этаже здания. Напольные будут использоваться только в серверной. Для настенного шкафа выберем марку Sysmatrix, а для напольного ЦМО (в серверной нужен шкаф с большой вместимостью)
+  \begin{table}[!htp]
     \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|l|l|l|l|l|l|}%{|p{1cm}|p{1cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
       \hline
-      
+      Производитель & Вид поставки & Вид монтажа & Конструктив & Стандарт упаковки & Стоимость \\ \hline
+      Sysmatrix & разборный & настенный & 19 & 6U & 4 490 рублей \\ \hline
+      ЦМО & разборный & настенный & 19 & 6U & 4 790 рублей \\ \hline
+      TLK & разборный & настенный &19 &6U &5 670 рублей\\ \hline
+      TLK & разборный & напольный & 19 & 18U & 18 890 рублей \\ \hline
+      TLK & разборный & напольный & 19 & 24U & 22 190 рублей \\ \hline
+      ЦМО & разборный & напольный & 19 & 42U & 40 070 рублей \\ \hline
     \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
+    \caption{Монтажный шкаф}
+    \label{table:mounting}
   \end{table}
 \item[Патч-панель]
-\begin{table}[!htbp]
+  Так как разницы в пачт-панелях, кроме количества портов нет, выберем самые дешёвые, то есть марки Nikomax для 24 портов и в 5bites для 48 портов.
+\begin{table}[!htp]
     \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|l|l|l|l|l|l|}%{|p{2cm}|p{1cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
       \hline
-      
+      Производитель & Кол. портов & Категория & Способ крепления & Стандарт & Стоимость \\ \hline
+      Nikomax & 24 & 5e & в стойку & UTP & 2 090 рублей \\ \hline
+      Nikomax & 48 & 5e & в стойку & UTP &4 420 рублей \\ \hline
+      NetLink & 24 & 5e & в стойку & UTP & 790 рублей \\ \hline
+      5bites &48 & 5e & в стойку & UTP & 2 390 рублей \\ \hline
     \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
+    \caption{Патч-панель}
+    \label{table:patchpanel}
   \end{table}
 \item[SFP-модуль]
-\begin{table}[!htbp]
+  Так как SFP модуль нужен для работы оптоволоконной сети, которая будет соединять здания, то лучше выбрать модуль с наибольшей скорость передачи данных, то есть марку SFP модуля – Форт-Телком.
+\begin{table}[!htp]
     \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|l|l|l|l|l|l|}%{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
       \hline
-      
+      Производитель & Скорость передачи данных & Дуплекс & Протоколы & Стандарт & Стоимость \\ \hline
+      TP-LINK & до 1000 Мбит/с  & + & CSMA/CD, TCP/IP & 802.3z & 1590 рублей \\ \hline
+      Форт-Телеком & 1.25Gb/s & + & CSMA/CD, TCP/IP & - &5 600 рублей \\ \hline
+      TG-NET & до 1000 Мбит/с & + & CSMA/CD, TCP/IP & 802.3z & 1 284 рублей \\ \hline
     \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
+    \caption{SFP-модуль}
+    \label{table:sfpmodule}
   \end{table}
 \item[Коммутатор]
-  \begin{table}[!htbp]
+  Коммутаторы 2 уровня нужны на 24 портов. Лучше всего выбрать те, у которых пропускная способность выше: HP.
+Коммутаторы 3 уровня будут использоваться для передачи информации между зданиями, поэтому необходима большая пропускная способность, следовательно, стоит выбрать коммутатор марки Cisco. Но данный коммутатор в 4 раза дороже коммутатора от HP, при этом пропускная способность больше всего в два раза. Поэтому, выберем коммутатор HP.
+  \begin{table}[!htp]
     \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|l|l|l|l|l|l|l|}%{|p{2cm}|p{1cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
       \hline
-      
+      Производитель & Кол. портов & SFP порты & Управление & Скорость \newline Мбит/с & Пропускная способность &Стоимость \\ \hline
+      Cisco & 24 & 2 & уровень 2 & 10/100/1000 & 8.8 Гбит/сек & 9 417 \\ \hline
+      HP & 24 & 2 & уровень 2 & 10/100/1000 & 52 Гбит/сек 11 330 \\ \hline
+      HP & 8 & 2 & уровень 3 & 10/100/1000 & 20 Гбит/сек & 24 242 \\ \hline
+      HP & 8 & 2 &уровень 3 & 10/100/1000 &- & 51 873 \\ \hline
+      Cisco & 8 & 4 & уровень 3 & 10/100/1000 & 46 Гбит/сек & 84 458 \\ \hline
+      Cisco & 8 & 8 & уровень 3 & до 10000 & - &168 184 \\ \hline
     \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
+    \caption{Коммутатор}
+    \label{table:commutator}
   \end{table}
 \item[ИБП]
-  \begin{table}[!htbp]
+  Возьмем наиболее дешевый ИБП.
+  \begin{table}[!htp]
     \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|l|l|l|l|}%{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
       \hline
-      
+      Производитель & Мощность & Тип источника &Стоимость\\ \hline
+      CyberPower & 360 Вт & резервный &  3 790 рублей \\ \hline
+      Ippon & 360 Вт & резервный &4 640 рублей \\ \hline
+      APC Pro & 230 Вт & интерактивный & 32 320 рублей \\ \hline
     \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
+    \caption{ИБП}
+    \label{table:ibp}
   \end{table}
-\item[Сервера]
-  \begin{table}[!htbp]
-    \centering
-    \begin{tabular}{|p{1cm}|p{1cm}|p{5cm}|p{2cm}|p{2cm}|}
-      \hline
-      
-    \end{tabular}
-    \caption{Витая пара}
-    \label{table:cabel}
-  \end{table}
-
-  \begin{description}
-    \item[]
-  \end{description}
   
+\item[Сервера]
+  Был выбран универсальный сервер от Intel. На двух таких серверах методами виртуализации будут работать все реализованные сервисы ЛВС.
+  \begin{table}[!htp]
+    \centering
+    \begin{tabular}{|l|l|}%{|p{3cm}|p{3cm}|}
+      \hline
+      Процессор & Intel Xeon E5-2630V4 \\ \hline
+      Платформа & Intel R2308WTTYSR \\ \hline
+      Контроллер диска & Adaptec ASR-8805 SGL \newline Adaptec AFM-700  \\ \hline
+      Диски SAS & Seagate Cheetah 15K.7 3.6TB (6x600GB) \\ \hline
+      Диски SSD & Intel 540S 240GB (2x120GB) \\ \hline
+      ОЗУ & 64GB (4x16GB) \\ \hline
+      Блок питания & 1100W \\ \hline
+      Стоимость & 508196 рублей \\ \hline
+    \end{tabular}
+    \caption{Универсальный сервер Intel}
+    \label{table:server}
+  \end{table}
 \end{description}
